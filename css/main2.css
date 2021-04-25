@@ -1,0 +1,48 @@
+.img-box {
+    column-count: 4;
+    column-gap: 5px;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.image {
+    max-width: 100%;
+    display: block;
+}
+
+.image-wrapper {
+    display: block;
+    opacity: 0.6;
+    transition: 1s;
+    /*filter: blur(1px);*/
+}
+
+.image-wrapper + .image-wrapper {
+    margin: 5px 0;
+}
+
+.image-wrapper:hover {
+    opacity: 1;
+    /*filter: blur(0);*/
+    /*filter: sepia(1);*/
+    /*filter: brightness(9999);*/
+    filter: hue-rotate(9deg);
+    
+}
+
+.link-wrapper {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.author {
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: 0.5s;
+}
